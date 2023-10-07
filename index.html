@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav_links">
+            <li id="active"><a href="#">Home</a></li>
+            <li><a href="index.html#events">About</a></li>
+            <li><a href="index.html#tours">Tours</a></li>
+            <li><a href="index.html#explore">Explore</a></li>
+            <li class="btn"><a href="#">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="Menu Button" class="menu-btn">
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div id="header_content">
+            <h2>Explore the Colorful World</h2>
+            <div id="line"></div>
+            <h1>A <span>WONDERFUL</span> GIFT</h1>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events -->
+    <div id="events">
+        <section class="events" id="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+                <div id="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./img/img1.png" alt="Img1">
+                    <h4>Everest Camp Trek</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos possimus temporibus repellat iste laudantium at non ullam. Expedita placeat dignissimos in porro voluptatem nemo tenetur! Ipsa vitae dolores repellat totam?</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="./img/img2.png" alt="Img1">
+                    <h4>Working Holidays</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos possimus temporibus repellat iste laudantium at non ullam. Expedita placeat dignissimos in porro voluptatem nemo tenetur! Ipsa vitae dolores repellat totam?</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Explore -->
+    <div id="explore">
+        <section class="explore" id="explore">
+            <div class="explore_content">
+                <h1>EXPLORE THE WORLD</h1>
+                <div id="line"></div>
+                <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde distinctio accusantium <br>laudantium. Et fugit dolorum deserunt quisquam sunt omnis.</pre>
+                <a href="#" class="btn">Explore Now</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Tours -->
+    <div id="tours">
+        <section class="tours" id="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>UPCOMING TOURS & DESTINATION</h1>
+                    <div id="line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus obcaecati ad vel velit unde magnam. Corrupti et labore rem esse impedit asperiores cupiditate, doloremque accusantium nemo dignissimos fuga sequi fugit.</p>
+                    <a href="#" class="btn">Click here to Explore</a>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="./img/img3.png" alt="i3">
+                        <img src="./img/img4.png" alt="i4">
+                        <img src="./img/img5.png" alt="i5">
+                        <img src="./img/img6.png" alt="i6">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 101060, New York, USA | Phone : 800-123-456 | Email : contact@example.in</p>
+        <p>Copyright &#169; 2023 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile_menu');
+        })
+    </script>
+</body>
+</html>
